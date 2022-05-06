@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger
+
+spring:
+  profiles:
+    active: "dev"
+  application:
+    name: bitcoin-transactions
+
+# spring boot actuator info
+info:
+  app:
+    name: '@project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
+    java:
+      version: '@java.version@'
+
+# Swagger
+swagger:
+  service:
+    version: "1.0"
+    title: ${spring.application.name}
+    description: "bitcoin-transactions"
+    termsPath: ""
+    email: "rrohit.ramsen@gmail.com"
+    licenceType: ""
+    licencePath: ""
