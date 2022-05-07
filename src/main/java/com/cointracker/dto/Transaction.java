@@ -1,17 +1,24 @@
 package com.cointracker.dto;
 
-import lombok.Builder;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigInteger;
 
 @Data
-@Builder
+@NoArgsConstructor
 public class Transaction {
 
+    @JsonProperty("block_id")
     private long blocId;
 
+    @JsonProperty("hash")
     private String hash;
 
+    @JsonProperty("time")
     private String time;
 
-    private Double balanceChange;
+    @JsonProperty("balance_change")
+    private BigInteger balanceChange;
 }

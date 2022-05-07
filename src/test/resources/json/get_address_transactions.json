@@ -1,0 +1,31 @@
+{
+  "count": 2,
+  "transactions": [
+    {
+      "block_id": 735206,
+      "hash": "d0f34d5fdb84f9efcf91c3e7b991b6dd18341b3b60db167cf5402a97dffba85d",
+      "time": "2022-05-06 19:57:48",
+      "balance_change": 322100
+    },
+    {
+      "block_id": 735165,
+      "hash": "b459e38ab2b146e6d1aa421e7e42c55fa3234103db29667446a4c553f04a0825",
+      "time": "2022-05-06 11:57:21",
+      "balance_change": 395419
+    }
+  ],
+  "context": {
+    "limit": 2,
+    "offset": 2,
+    "links": [
+      {
+        "rel": "prev",
+        "href": "/v1/bitcoin/address/12xQ9k5ousS8MqNsMBqHKtjAtCuKezm2Ju/txs?limit=2&offset=0"
+      },
+      {
+        "rel": "next",
+        "href": "/v1/bitcoin/address/12xQ9k5ousS8MqNsMBqHKtjAtCuKezm2Ju/txs?limit=2&offset=4"
+      }
+    ]
+  }
+}

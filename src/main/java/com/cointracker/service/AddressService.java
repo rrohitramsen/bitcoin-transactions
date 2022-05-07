@@ -1,11 +1,11 @@
 package com.cointracker.service;
 
-import com.cointracker.dto.AddressBalance;
-import com.cointracker.dto.AddressDto;
-import com.cointracker.dto.AddressTransactions;
+import com.cointracker.dto.CurrentBalances;
+import com.cointracker.dto.Transaction;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public interface AddressService {
@@ -14,7 +14,7 @@ public interface AddressService {
 
     void removeAddress(String address);
 
-    String getAddressTransactions(String address, int limit, int offset);
+    Optional<List<Transaction>> getAddressTransactions(String address, int limit, int offset);
 
-    String getAddressBalance(String address);
+    Optional<CurrentBalances> getAddressBalance(String address);
 }
